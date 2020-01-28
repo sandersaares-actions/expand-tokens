@@ -1,0 +1,18 @@
+name: 'Expand tokens'
+author: 'Sander Saares'
+description: 'Replaces `__tokens__` with the values of equivalent environment variables.'
+inputs:
+  path:
+    description: 'Path to the file or directory to process.'
+    required: true
+  filenames:
+    description: 'Filename filter, used if path is a directory. Semicolon separates patterns.'
+  recursive:
+    description: 'Whether to recursively search for files, used if path is a directory.'
+    default: false
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
+branding:
+  icon: 'type'
+  color: 'red'
