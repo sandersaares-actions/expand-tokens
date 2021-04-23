@@ -1,6 +1,6 @@
 $ErrorActionPreference = "Stop"
 
-Import-Module Axinom.DevOpsTooling
+Import-Module sandersaares.devops-scripts
 
 $path = Join-Path $env:GITHUB_WORKSPACE $env:INPUT_PATH
 
